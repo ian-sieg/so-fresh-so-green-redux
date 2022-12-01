@@ -32,20 +32,20 @@ function Post() {
   return (
     comments?.length === 0 ? 
     <div>
-    <div class="px-6 py-6 border-b bg-white rounded-lg shadow border-gray-300">
-      <div class="w-max flex justify-between items-center">
+    <div>
+      <div>
         {/* <br></br> */}
-        <div class="flex items-center cursor-pointer">
-          <img class="rounded-full h-10 w-10" src={userId.profPic} />
+        <div>
+          <img src={userId.profPic} />
           <h4>
             By: <Link to={`/profile/${userId._id}`}>{username}</Link>
           </h4>
-          <p class=" ml-2">Created at: {createdAt}</p>
-          <h3 class="ml-2">{body}</h3>
-          <img class="ml-2" src={image} />
+          <p>Created at: {createdAt}</p>
+          <h3>{body}</h3>
+          <img src={image} />
           <hr />
-          <div class="px-6 py-6  flex justify-between items-center">
-            <div class="flex items-center space-x-2">
+          <div>
+            <div>
               <LikeButton user={userData} post={{ _id, likes, likeCount }} />
               {rightUser ? (
                 <DeletePostButton postId={{ _id }} callback={deleteReroute} />
@@ -62,20 +62,20 @@ function Post() {
     </div>
   </div> :
     <div>
-      <div class="px-6 py-6 border-b bg-white rounded-lg shadow border-gray-300">
-        <div class="w-max flex justify-between items-center">
+      <div>
+        <div>
           {/* <br></br> */}
-          <div class="flex items-center cursor-pointer">
-            <img class="rounded-full h-10 w-10" src={userId.profPic} />
+          <div>
+            <img src={userId.profPic} />
             <h4>
               By: <Link to={`/profile/${userId._id}`}>{username}</Link>
             </h4>
-            <p class=" ml-2">Created at: {moment(createdAt).fromNow(true)}</p>
-            <h3 class="ml-2">{body}</h3>
-            <img class="ml-2" src={image} />
+            <p>Created at: {moment(createdAt).fromNow(true)}</p>
+            <h3>{body}</h3>
+            <img src={image} />
             <hr />
-            <div class="px-6 py-6  flex justify-between items-center">
-              <div class="flex items-center space-x-2">
+            <div>
+              <div>
                 <LikeButton user={userData} post={{ _id, likes, likeCount }} />
                 {rightUser ? (
                   <DeletePostButton postId={{ _id }} callback={deleteReroute} />

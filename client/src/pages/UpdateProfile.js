@@ -95,20 +95,13 @@ export default function UpdateProfile() {
     return (
 
 <>
-      <div class="bg-white rounded-lg shadow">
-      <div
-                        class="rounded-r-lg py-6 flex items-center justify-center"
-                    >
+      <div>
+      <div>
                       Update Profile
-
                     </div>
-                <div
-                    class="px-6 py-6 border-b border-gray-300 flex items-center"
-                >
-                    <div
-                        class="flex items-center justify-end rounded-lg w-full"
-                    >
-                        <form onSubmit={handleFormSubmit} class="grid-col-1 items-center justify-end rounded-lg w-full">
+                <div>
+                    <div>
+                        <form onSubmit={handleFormSubmit}>
                         <div>Name</div>
                         <div>
             <input name='username' placeholder={`${data?.getUser.username}`} value={formState.username} onChange={handleChange} />
@@ -125,22 +118,20 @@ export default function UpdateProfile() {
         <div>
             <textarea name='bio' placeholder={`${data?.getUser.bio}`} value={formState.bio} onChange={handleChange}></textarea>
         </div>
-                            <div class="flex items-center justify-end rounded-lg w-full">
+                            <div>
                                 <button type='submit'>Submit Updates</button>
                             </div>
                         </form>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-4 justify-center">
-
+                <div>
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)} className="4 p-4 m-12 border-dark rounded">
-        <div className="form-group row">
-          <label htmlFor="image" className="col-sm-2 col-form-label">Update your profile picture:</label>
-          <div class="col-sm-4">
+                <form onSubmit={handleSubmit(onSubmit)}>
+        <div>
+          <label htmlFor="image">Update your profile picture:</label>
+          <div>
             <input
-              className="image"
               name="image"
               type="file"
               id="image"
@@ -150,145 +141,12 @@ export default function UpdateProfile() {
           </div>
         </div>
         <br></br>
-        <div className="col-sm-10">
+        <div>
           <button type="submit">Upload Photo</button>
         </div>
         <br></br>
       </form>
-
-
-
             </div>
-
-
-
-
-
-
-
-    {/* <div>
-      <form onSubmit={handleSubmit(onSubmit)} className="4 p-4 border border-dark rounded" style={{ backgroundColor: "rgb(170,200,170)", fontWeight: "bold" }}>
-        <div className="form-group row">
-          <label htmlFor="image" className="col-sm-2 col-form-label">Update your profile picture:</label>
-          <div class="col-sm-4">
-            <input
-              className="image"
-              name="image"
-              type="file"
-              id="image"
-              {...register("picture")}
-              onChange={onPreviewImage}
-            />
-          </div>
-          <img src={image} alt="Preview Image" />
-        </div>
-        <br></br>
-        <div className="col-sm-10">
-          <button type="submit">Upload Photo</button>
-        </div>
-        <br></br>
-      </form>
-
-
-      {/* other form for rest of data */}
-      {/* {loading ? <div>Loading...</div> : 
-      <form onSubmit={handleFormSubmit}>
-        <div>
-            <input name='username' placeholder={`${data?.getUser.username}`} value={formState.username} onChange={handleChange} />
-        </div>
-        <div>
-            <input name='email' placeholder={`${data?.getUser.email}`} value={formState.email} onChange={handleChange} />
-        </div>
-        <div>
-            <input name='location' placeholder={`${data?.getUser.location}`} value={formState.location} onChange={handleChange} />
-        </div>
-        <div>
-            <textarea name='bio' placeholder={`${data?.getUser.bio}`} value={formState.bio} onChange={handleChange}></textarea>
-        </div>
-
-        <div>
-            <button type='submit'>Update your profile</button>
-        </div>
-      </form>} 
-    </div> */}
     </>
     )
 }
-
-
-/// Code graveyard
-
-// const [state, dispatch] = useGlobalUserContext();
-        // console.log(state)
-
-        //profile picture upload
-        // const [file, setFile] = useState()
-        // const [fileName, setFileName] = useState('')
-        // const [fileUpload] = useMutation(UPLOAD_PROFILE_PIC, {
-        //     onCompleted: data => console.log(data)
-        // })
-    
-        //Sets the state of file and filename based on chosen upload file
-        // const handlePictureUploadChange = async (event) => {
-        //     console.log("handlePictureUploadChange executed")
-        //     if (!event.target.files[0]) return;
-    
-        //     // console.log(event.target.files)
-        //     // console.log(event.target.files[0])
-        //     // console.log(event.target.files[0].name)
-        //     // const imgString = event.target.files[0].name
-        //     // console.log(imgString);
-        //     // setFile(event.target.files[0])
-        //     // setFileName(imgString)
-
-        //     const file = event.target.files[0];
-        //     console.log(file);
-
-        //     let formData = new FormData();
-        //     formData.append("image", file);
-        //     console.log([...formData])
-            
-        //     try {
-        //       const { data } = await fileUpload ({
-        //         variables: {
-        //             file: formData,
-        //             // //hardcoded user id
-        //             // _id: '631a10c8c5a04c2313908f6c',
-        //         }
-        //     })
-        //     } catch {
-
-        //     }
-        // }
-    
-        //handler for submitting the upload
-        // const handlePictureUploadSubmit = async (event) => {
-        //     console.log("handlePictureUploadSubmit executed")
-        //     event.preventDefault();
-        //     console.log(file);
-        //     if (!file) console.log('no file present');
-        //     if (!file) return;
-    
-        //     try {
-        //         const response = await fileUpload({
-        //             variables: {
-        //                 file: file,
-        //                 //hardcoded user id
-        //                 _id: '631a10c8c5a04c2313908f6c',
-        //             }
-        //         });
-        //         console.log(response);
-
-                // const updatedUserData = response.data.uploadPicture.user
-                // console.log('updated user data:' + updatedUserData)
-    
-                // // dispatchEvent({
-                // //     type: SET_USER_DATA,
-                // //     payload: updatedUserData
-                // // });
-    
-                // console.log('This is the response: ' + response)
-        //     } catch (error) {
-        //         console.log(error)
-        //     }
-        // }

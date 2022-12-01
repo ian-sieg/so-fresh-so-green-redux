@@ -5,7 +5,7 @@ import Cart from "../components/Cart";
 
 const PlantShop = () => {
   return (
-    <section class="text-gray-600 body-font">
+    <section>
       {/* <CategoryMenu /> */}
       <ProductList />
       <Cart />
