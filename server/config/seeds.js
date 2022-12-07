@@ -24,7 +24,7 @@ db.once("open", async () => {
     {
       name: "bamboo",
       waterSched: "2x/day",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-21.jpg",
+      image: "images-1.jpg",
       description: "blah blah blah blah blah",
       username: "Pamela",
       createdAt: new Date().toISOString(),
@@ -32,7 +32,7 @@ db.once("open", async () => {
     {
       name: "grass",
       waterSched: "2x/day",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-20.jpg",
+      image: "images-2.jpg",
       description: "blah blah blah blah blah",
       username: "Pamela",
       createdAt: new Date().toISOString(),
@@ -40,7 +40,7 @@ db.once("open", async () => {
     {
       name: "fern",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-19.jpg",
+      image: "images-3.jpg",
       description: "blah blah blah blah blah",
       username: "Elijah",
       createdAt: new Date().toISOString(),
@@ -48,7 +48,7 @@ db.once("open", async () => {
     {
       name: "monstera",
       waterSched: "2x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-18.jpg",
+      image: "images-4.jpg",
       description: "blah blah blah blah blah",
       username: "Jimbo",
       createdAt: new Date().toISOString(),
@@ -56,7 +56,7 @@ db.once("open", async () => {
     {
       name: "tree",
       waterSched: "2x/year",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-17.jpg",
+      image: "images-6.jpg",
       description: "blah blah blah blah blah",
       username: "Jimbo",
       createdAt: new Date().toISOString(),
@@ -64,7 +64,7 @@ db.once("open", async () => {
     {
       name: "moss",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-16.jpg",
+      image: "images-7.jpg",
       description: "blah blah blah blah blah",
       username: "Niki",
       createdAt: new Date().toISOString(),
@@ -72,7 +72,7 @@ db.once("open", async () => {
     {
       name: "melon",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-15.jpg",
+      image: "images-8.jpg",
       description: "blah blah blah blah blah",
       username: "Grego",
       createdAt: new Date().toISOString(),
@@ -80,7 +80,7 @@ db.once("open", async () => {
     {
       name: "Money Tree",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-14.jpg",
+      image: "images-9.jpg",
       description: "marketplace plant",
       username: "Syd",
       createdAt: new Date().toISOString(),
@@ -88,7 +88,7 @@ db.once("open", async () => {
     {
       name: "Marigold",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-13.jpg",
+      image: "images-10.jpg",
       description: "marketplace plant",
       username: "Syd",
       createdAt: new Date().toISOString(),
@@ -96,7 +96,7 @@ db.once("open", async () => {
     {
       name: "fiddlehead fern",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-12.jpg",
+      image: "images-12.jpg",
       description: "marketplace plant",
       username: "Syd",
       createdAt: new Date().toISOString(),
@@ -104,7 +104,7 @@ db.once("open", async () => {
     {
       name: "cactus",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-11.jpg",
+      image: "images-13.jpg",
       description: "marketplace plant",
       username: "Taylor",
       createdAt: new Date().toISOString(),
@@ -112,7 +112,7 @@ db.once("open", async () => {
     {
       name: "orchid",
       waterSched: "2x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-10.jpg",
+      image: "images-1.jpg",
       description: "marketplace plant",
       username: "Taylor",
       createdAt: new Date().toISOString(),
@@ -120,7 +120,7 @@ db.once("open", async () => {
     {
       name: "baby rubber plant",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-9.jpg",
+      image: "images-10.jpg",
       description: "marketplace plant",
       username: "Taylor",
       createdAt: new Date().toISOString(),
@@ -128,7 +128,7 @@ db.once("open", async () => {
     {
       name: "halcyon host",
       waterSched: "1x/week",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-8.jpg",
+      image: "images-12.jpg",
       description: "marketplace plant",
       username: "Taylor",
       createdAt: new Date().toISOString(),
@@ -144,7 +144,7 @@ db.once("open", async () => {
       name: "Plant 1",
       description:
         "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-21.jpg",
+      image: "images-1.jpg",
       price: 2.99,
       quantity: 500,
       plant: plants[0]._id,
@@ -154,7 +154,7 @@ db.once("open", async () => {
       name: "Plant 2",
       description:
         "Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-20.jpg",
+      image: "images-2.jpg",
       price: 1.99,
       quantity: 500,
       plant: plants[1]._id,
@@ -165,7 +165,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-18.jpg",
+      image: "images-3.jpg",
       price: 7.99,
       plant: plants[2]._id,
       quantity: 20,
@@ -175,7 +175,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-17.jpg",
+      image: "images-4.jpg",
       price: 3.99,
       plant: plants[3]._id,
       quantity: 50,
@@ -185,7 +185,7 @@ db.once("open", async () => {
       category: categories[1]._id,
       description:
         "Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-1.jpg",
+      image: "images-6.jpg",
       price: 14.99,
       plant: plants[4]._id,
       quantity: 100,
@@ -195,7 +195,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description:
         "Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-16.jpg",
+      image: "images-7.jpg",
       price: 399.99,
       plant: plants[5]._id,
       quantity: 30,
@@ -205,7 +205,7 @@ db.once("open", async () => {
       category: categories[2]._id,
       description:
         "In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.",
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-15.jpg",
+      image: "images-8.jpg",
       price: 199.99,
       plant: plants[6]._id,
       quantity: 30,
@@ -223,7 +223,7 @@ db.once("open", async () => {
     location: "Chicago, IL",
     password: "password12345",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-daniel-xavier-1239288.jpg",
+      "ppl-1.jpg",
     plants: [plants[0]._id, plants[1]._id],
     orders: [
       {
@@ -239,7 +239,7 @@ db.once("open", async () => {
     bio: "I hate plants",
     location: "Seattle, WA",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/yusron-el-jihan-YRJsMa72UDw-unsplash.jpg",
+      "ppl-2.jpg",
     plants: [plants[2]._id, plants[0]._id],
     following: [pam._id],
   });
@@ -251,7 +251,7 @@ db.once("open", async () => {
     bio: "I am allergic to plants",
     location: "Atlanta, GA",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/zoe-fernandez--zqoE7jnQgw-unsplash.jpg",
+      "ppl-3.jpg",
     plants: [plants[3]._id, plants[4]._id],
     orders: [
       {
@@ -267,7 +267,7 @@ db.once("open", async () => {
     bio: "I have too many plants",
     location: "Dallas, TX",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-stefan-stefancik-91227.jpg",
+      "ppl-4.jpg",
     plants: [plants[4]._id, plants[5]._id],
     following: [jimbo._id],
   });
@@ -279,7 +279,7 @@ db.once("open", async () => {
     bio: "I am scared of plants",
     location: "Detroit, MI",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-samson-katt-5255596.jpg",
+      "ppl-5.jpg",
     plants: [plants[6]._id],
     orders: [
       {
@@ -297,7 +297,7 @@ db.once("open", async () => {
     location: "Boulder, CO",
     password: "password12345",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-pixabay-220453.jpg",
+      "ppl-6.jpg",
     plants: [plants[7]._id, plants[8]._id, plants[9]._id],
     orders: [
       {
@@ -315,7 +315,7 @@ db.once("open", async () => {
     bio: "I dont know what to put here lmao lol",
     location: "Springfield, OR",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-k-makhasette-3805874.jpg",
+      "ppl-7.jpg",
     plants: [plants[6]._id],
     orders: [
       {
@@ -333,7 +333,7 @@ db.once("open", async () => {
     location: "New York, NY",
     password: "password12345",
     profPic:
-      "https://sfsg-upload.s3.us-east-2.amazonaws.com/pexels-jimmy-jimmy-1484794.jpg",
+      "ppl-8.jpg",
     plants: [plants[7]._id, plants[8]._id, plants[9]._id],
     orders: [
       {
@@ -354,7 +354,7 @@ db.once("open", async () => {
       username: "grego",
       createdAt: new Date().toISOString(),
       userId: grego._id,
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-1.jpg",
+      image: "images-1.jpg",
       comments: [
         {
           body: "blah blah blah blah",
@@ -386,7 +386,7 @@ db.once("open", async () => {
       body: "Another lovely post",
       username: "frankie",
       createdAt: new Date().toISOString(),
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-2.jpg",
+      image: "images-2.jpg",
       userId: frankie._id,
     },
     {
@@ -394,7 +394,7 @@ db.once("open", async () => {
       username: "pam",
       createdAt: new Date().toISOString(),
       userId: pam._id,
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-3.jpg",
+      image: "images-3.jpg",
       comments: [
         {
           body: "blah blah blah blah",
@@ -426,14 +426,14 @@ db.once("open", async () => {
       body: "blah blah blah",
       username: "pam",
       createdAt: new Date().toISOString(),
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-4.jpg",
+      image: "images-4.jpg",
       userId: pam._id,
     },
     {
       body: "sample x2",
       username: "jimbo",
       createdAt: new Date().toISOString(),
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-5.jpg",
+      image: "images-6.jpg",
       userId: jimbo._id,
       comments: [
         {
@@ -454,7 +454,7 @@ db.once("open", async () => {
       body: "plants plants plants",
       username: "syd",
       createdAt: new Date().toISOString(),
-      image: "https://sfsg-upload.s3.us-east-2.amazonaws.com/images-5.jpg",
+      image: "images-7.jpg",
       userId: syd._id,
     },
   ]);

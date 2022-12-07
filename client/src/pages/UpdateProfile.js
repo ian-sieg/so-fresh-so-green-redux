@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { useParams, useNavigate } from 'react-router-dom';
 import { UPDATE_USER } from "../utils/mutations";
 import { QUERY_USER_UPDATE } from "../utils/queries";
-import { singleUploadApi } from "../Functionality/api"
 import Auth from '../utils/auth'
 
 export default function UpdateProfile() {
@@ -31,7 +30,8 @@ export default function UpdateProfile() {
     }
   }
   const onSubmit = async (data, e) => {
-    await singleUploadApi(data);
+    // await singleUploadApi(data);
+    console.log('nice')
     updateReroute();
   }
 
