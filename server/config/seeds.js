@@ -4,9 +4,7 @@ const {
   Product,
   Category,
   Plant,
-  Post,
-  Message,
-  Chat,
+  Post
 } = require("../models");
 
 db.once("open", async () => {
@@ -347,31 +345,7 @@ db.once("open", async () => {
   });
 
   console.log("users seeded");
-
-  await Message.deleteMany();
-
-  const messages1 = await Message.create({
-    sender: pam._id,
-    content: "this is a test",
-    createdAt: "death",
-  });
-
-  const messages2 = await Message.create({
-    sender: syd._id,
-    content: "this is a test 2",
-    createdAt: "sunrise",
-  });
-
-  console.log("messagecreated");
-
-  await Chat.deleteMany();
-
-  const chat = await Chat.create({
-    recipientsId: frankie._id,
-    messages: [messages1],
-    createdAt: "Today",
-  });
-
+  
   await Post.deleteMany();
 
   const posts = await Post.insertMany([
