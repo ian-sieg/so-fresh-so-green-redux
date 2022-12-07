@@ -46,7 +46,7 @@ function App() {
           element={<Success />}
         />
         <Route
-          path="/orderHistory"
+          path="/order-history"
           element={<OrderHistory />}
         />
         <Route

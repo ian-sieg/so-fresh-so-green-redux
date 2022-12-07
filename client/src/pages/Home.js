@@ -5,21 +5,15 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
-        <>
         <div>
-            <div>
                 <section>
-                <div>
-                    <div>
                     <h1>So Fresh So Green</h1>
                         <p>Buy, Sell, Trade, and Share all the latest plants in your area. </p>
-                        {/* TODO: convert to react link */}
                         <Link to="/signup">
                         <a href="/signup">
                             Get started
                         </a>
                         </Link>
-                        {/* TODO: convert to react link */}
                         <Link to="/signup">
                         <a href="/signup">
                             SIGN UP NOW
@@ -40,12 +34,9 @@ export default function Home() {
                         <h3>Sell Your Plants</h3>
                         <p> Got green? Buy and sell plants in app!</p>
                     </div>
-                    </div>
-                </div>
             </section>
         <Footer />
-            </div>
-    </div>
-    </>
+        </div>
+
     );
 };

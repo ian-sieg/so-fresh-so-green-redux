@@ -1,16 +1,6 @@
 const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
-  scalar Upload
-
-  # type FileUploadResponse {
-  #   ETag: String!
-  #   Location: String!
-  #   key: String!
-  #   Key: String!
-  #   Bucket: String!
-  # }
-
   type Category {
     _id: ID
     name: String
@@ -120,21 +110,7 @@ const typeDefs = gql`
     messages: [Message]
     recipientsId: User
     createdAt: String,
-  }
-
-  type File {
-    filename: String!
-    mimetype: String!
-    encoding: String!
-    url: String
-    user: User
-  }
-
-  
-
-  type SuccessMessage {
-    message: String
-  }
+  } 
 
   type Query {
     categories: [Category]
@@ -144,7 +120,6 @@ const typeDefs = gql`
     getOrder(_id: ID!): Order
     checkout(products: [ID]!): Checkout
     posts: [Post]
-    # plants: [Plant]
     getPost(postId: ID!): Post
     getUserPost(user: ID!): [Post]
     getMessages: [Message]
@@ -172,8 +147,6 @@ const typeDefs = gql`
     deletePlant(plantId: ID!): String!
     postMessage( sender: String, content: String): Message
     addChat(recipientsId: [String!]): Chat
-    singleUpload(file: Upload!): SuccessMessage
-    updateUserPic(file: Upload!): User
   }
 `;
 
